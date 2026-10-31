@@ -1,0 +1,10 @@
+numpy>=1.23
+scipy>=1.9
+open3d>=0.17
+plyfile>=0.7
+opencv-python>=4.7
+torch>=2.1.2
+torchvision>=0.16
+scikit-learn>=1.2
+matplotlib>=3.6
+tqdm>=4.65
