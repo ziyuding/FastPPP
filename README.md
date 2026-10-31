@@ -1,13 +1,21 @@
-# FastPPP
+# FastPPP: A Fast Plant Phenotyping Pipeline via 3D Gaussian Splatting for High-Throughput Analysis of Potted Alfalfa
 
-A fast 3D Gaussian Splatting pipeline for high-throughput phenotyping of potted
-alfalfa (*Medicago sativa* L.).
+This repository contains the official implementation of the paper:
 
-Companion repository for the manuscript submitted to *Plant Phenomics*.
+> **FastPPP: A Fast Plant Phenotyping Pipeline via 3D Gaussian Splatting for High-Throughput Analysis of Potted Alfalfa**
 
 ---
 
+## News
+
+- **[Oct 2026]** Our paper has been submitted.
+- **[Oct 2026]** This repository is now populated with the algorithmic components
+  described in the paper, together with four sample plant point clouds.
+
 ## Overview
+
+FastPPP is an end-to-end 3D reconstruction and high-throughput phenotyping
+pipeline tailored for large-scale potted plant populations.
 
 | Folder | What it does |
 |---|---|
@@ -84,6 +92,8 @@ VCP pruning hooks are new; everything else follows the upstream code.
 
 ## Citation
 
+If you find this work useful in your research, please consider citing:
+
 ```bibtex
 @article{fastppp2026,
   title   = {FastPPP: A Fast Plant Phenotyping Pipeline via 3D Gaussian
@@ -94,3 +104,7 @@ VCP pruning hooks are new; everything else follows the upstream code.
   doi     = {<doi>}
 }
 ```
+
+---
+
+*For any inquiries regarding the paper or code, please contact the authors.*
