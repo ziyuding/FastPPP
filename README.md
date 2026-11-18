@@ -22,11 +22,16 @@ pipeline tailored for large-scale potted plant populations.
 | `Video Sampling` | 1080P video -> frames at a fixed interval |
 | `Sparse Reconstruction` | **Dual-FastSfM**: circular-topology image pairing, then incremental SfM. `visualization/` holds the match-matrix and co-visibility viewers |
 | `Gaussian Splatting` | 3DGS training with **ABBS** and **VCP** (see the README inside) |
-| `Scale and Segmentation` | 30 mm reference cube -> millimetre scale, ground alignment, pot / soil removal |
+| `Scale and Segmentation` | 30 mm reference cube -> millimetre scale and ground alignment |
 
-Trait computation (canopy volume, plant height, leaf length and width, green
-ratio, fresh-biomass inversion) follows section 2.5 of the paper and is not
-released here.
+The released code ends at a calibrated, ground-aligned point cloud. Everything
+downstream of that - plant extraction (pot wall, soil surface, label tags, black
+cloth), trait computation and biomass inversion - is described in section 2.5 of
+the paper and is **not** released here.
+
+This is deliberate. The pipeline is tuned to a specific acquisition rig, pot
+geometry and growth stage; running it on a different setup requires
+re-parameterisation that we are happy to do together - see Collaboration below.
 
 ---
 
@@ -68,12 +73,22 @@ sample_pointclouds/
 
 ---
 
+## Collaboration
+
+We work with groups that use the same acquisition rig. The usual arrangement is
+straightforward: you capture, we run the full reconstruction-and-phenotyping
+pipeline on your data and return the calibrated point clouds together with the
+trait tables.
+
+If you are interested, contact the corresponding author with a short description
+of your experiment (species, pot geometry, number of plants, number of dates).
+
 ## Data and full pipeline availability
 
-The 1,116-session dataset, trained checkpoints, the batch orchestration scripts
-and the trait-computation module are **not** included. They are available from
-the corresponding author upon reasonable request, subject to institutional
-data-sharing policy.
+The 1,116-session dataset, trained checkpoints, the plant-extraction module, the
+trait-computation module and the batch orchestration scripts are **not**
+included. They are available from the corresponding author upon reasonable
+request, subject to institutional data-sharing policy.
 
 ---
 
