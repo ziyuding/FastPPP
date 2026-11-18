@@ -1,9 +1,7 @@
 # Gaussian Splatting
 
-`FastGS-master/` is a modified copy of [FastGS](https://github.com/fastgs/FastGS)
-(arXiv:2511.04283). The training framework, the CUDA rasteriser and the
-densification schedule come from upstream and stay under their original licence
-(`FastGS-master/LICENSE_GAUSSIAN_SPLATTING.md`).
+`FastGS-master/` contains code derived from the FastGS repository; the upstream
+licence is kept at `FastGS-master/LICENSE_GAUSSIAN_SPLATTING.md`.
 
 Two modules are introduced in this work: **ABBS** and **VCP**.
 
@@ -120,13 +118,3 @@ If you find this work useful in your research, please consider citing:
 }
 ```
 
-The Gaussian Splatting backbone should also be cited:
-
-```bibtex
-@article{fastgs2025,
-  title   = {FastGS: Training 3D Gaussian Splatting in 100 Seconds},
-  author  = {<FastGS authors>},
-  journal = {arXiv preprint arXiv:2511.04283},
-  year    = {2025}
-}
-```
