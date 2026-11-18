@@ -27,14 +27,6 @@ trait tables.
 If you are interested, contact the corresponding author with a short description
 of your experiment (species, pot geometry, number of plants, number of dates).
 
-## Acknowledgement
-
-`Gaussian Splatting/FastGS-master` is a modified copy of
-[FastGS](https://github.com/fastgs/FastGS) (arXiv:2511.04283), which itself builds
-on [3DGS](https://github.com/graphdeco-inria/gaussian-splatting).
-
----
-
 ## Citation
 
 If you find this work useful in your research, please consider citing:
